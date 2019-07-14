@@ -11,8 +11,8 @@ init:
   - cd /d C:\vscode
   - npm install --global windows-build-tools --vs2015
   - npm install yarn@latest -g
-  - yarn add oniguruma
-  - yarn add native-watchdog
+  - npm install oniguruma
+  - npm install native-watchdog
   - node C:\Users\appveyor\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
   - node C:\Users\appveyor\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js compile
 
