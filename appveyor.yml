@@ -1,0 +1,19 @@
+version: x.{build}
+
+environment:
+  matrix:
+    - nodejs_version: "11"
+
+image: Visual Studio 2017
+
+init:
+  - git clone https://github.com/microsoft/vscode C:\vscode
+  - cd /d C:\vscode
+  - yarn
+  - yarn compile
+
+artifacts:
+  - path: C:\vscode\out\VSCode-win32-x64.zip
+    name: VisualStudioCode-x64
+  - path: C:\vscode\out\VSCode-win32-ia32.zip
+    name: VisualStudioCode-ia32
