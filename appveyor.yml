@@ -9,6 +9,7 @@ image: Visual Studio 2017
 init:
   - git clone https://github.com/microsoft/vscode C:\vscode
   - cd /d C:\vscode
+  - npm install yarn@latest -g
   - yarn
   - yarn compile
 
