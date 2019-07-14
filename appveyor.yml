@@ -10,8 +10,9 @@ init:
   - git clone https://github.com/microsoft/vscode C:\vscode
   - cd /d C:\vscode
   - npm install --global windows-build-tools --vs2015
-  - npm install
-  - npm compile
+  - yarn add yarn@latest
+  - yarn install
+  - yarn compile
 
 artifacts:
   - path: C:\vscode\out\VSCode-win32-x64.zip
