@@ -7,9 +7,9 @@ environment:
 image: Visual Studio 2017
 
 init:
+  - npm -v
   - git clone https://github.com/microsoft/vscode C:\vscode
   - cd /d C:\vscode
-  - yarn policies set-version
   - yarn
   - yarn compile
 
