@@ -15,6 +15,8 @@ init:
   - npm install
   - cd ..
   - npm install spdlog
+  - npm install node-pty
+  - npm install nsfw
   - del package-lock.json
   - node C:\Users\appveyor\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
   - node C:\Users\appveyor\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js compile
