@@ -7,6 +7,7 @@ environment:
 image: Visual Studio 2017
 
 init:
+  - set npm_config_build_v8_with_gn="false"
   - git clone https://github.com/microsoft/vscode C:\vscode
   - cd /d C:\vscode
   - npm install --global windows-build-tools --vs2015
